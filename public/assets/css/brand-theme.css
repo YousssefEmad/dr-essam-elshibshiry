@@ -104,3 +104,145 @@ a.u-text-palette-1-base {
   background-position: 50% 18% !important;
   background-size: cover !important;
 }
+
+/* Homepage before/after — temporarily hidden until new case images arrive */
+.essam-home-ba-hidden,
+.essam-home-services-mobile-old {
+  display: none !important;
+}
+
+/* Services section — mobile: doctor photo then stacked white cards */
+@media (max-width: 991px) {
+  .u-section-4 .u-sheet-1 {
+    min-height: auto !important;
+    padding-bottom: 40px;
+  }
+
+  .u-section-4 .u-text-1 {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+
+  .u-section-4 .u-text-2,
+  .u-section-4 .u-text-3 {
+    width: auto !important;
+    max-width: 100%;
+  }
+
+  .u-section-4 .u-text-2 {
+    background: #fff;
+    border-radius: 14px 14px 0 0;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+    margin: 0 auto !important;
+    padding: 20px 18px 8px;
+    max-width: 100%;
+  }
+
+  .u-section-4 .u-text-3 {
+    background: #fff;
+    border-radius: 0 0 14px 14px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+    margin: -1px auto 20px !important;
+    padding: 0 18px 20px;
+    max-width: 100%;
+  }
+
+  .u-section-4 .u-layout-wrap-1 {
+    margin-bottom: 0 !important;
+  }
+
+  .u-section-4 .u-layout-wrap-1 > .u-layout > .u-layout-row {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 16px;
+  }
+
+  /* Doctor image first */
+  .u-section-4 .u-layout-wrap-1 > .u-layout > .u-layout-row > .u-size-20:nth-child(2) {
+    order: -1;
+    width: 100% !important;
+    max-width: 320px;
+    margin: 0 auto 8px;
+  }
+
+  .u-section-4 .u-layout-wrap-1 > .u-layout > .u-layout-row > .u-size-20:nth-child(1),
+  .u-section-4 .u-layout-wrap-1 > .u-layout > .u-layout-row > .u-size-20:nth-child(3) {
+    width: 100% !important;
+  }
+
+  .u-section-4 .u-image-1 {
+    min-height: 360px !important;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 10px 28px rgba(0, 0, 0, 0.12);
+  }
+
+  .u-section-4 .u-layout-col {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 14px;
+  }
+
+  .u-section-4 .u-layout-cell-1,
+  .u-section-4 .u-layout-cell-2,
+  .u-section-4 .u-layout-cell-3,
+  .u-section-4 .u-layout-cell-5,
+  .u-section-4 .u-layout-cell-6,
+  .u-section-4 .u-layout-cell-7 {
+    min-height: auto !important;
+    background: #fff !important;
+    border-radius: 14px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  }
+
+  .u-section-4 .u-container-layout-1,
+  .u-section-4 .u-container-layout-2,
+  .u-section-4 .u-container-layout-3,
+  .u-section-4 .u-container-layout-5,
+  .u-section-4 .u-container-layout-6,
+  .u-section-4 .u-container-layout-7 {
+    padding: 22px 18px !important;
+  }
+
+  .u-section-4 .u-text-4,
+  .u-section-4 .u-text-6,
+  .u-section-4 .u-text-8,
+  .u-section-4 .u-text-10,
+  .u-section-4 .u-text-12,
+  .u-section-4 .u-text-14 {
+    margin: 0 0 8px !important;
+    font-size: 1.15rem;
+  }
+
+  .u-section-4 .u-text-5,
+  .u-section-4 .u-text-7,
+  .u-section-4 .u-text-9,
+  .u-section-4 .u-text-11,
+  .u-section-4 .u-text-13,
+  .u-section-4 .u-text-15 {
+    margin: 0 !important;
+  }
+}
+
+/* Disable left/right (and all) Nicepage scroll animations on mobile — they break layout */
+@media (max-width: 991px) {
+  .animated,
+  [data-animation-name],
+  .fadeInLeft,
+  .fadeInRight,
+  .fadeInLeftBig,
+  .fadeInRightBig,
+  .slideInLeft,
+  .slideInRight,
+  .slideIn,
+  .fadeIn,
+  .zoomIn {
+    animation: none !important;
+    -webkit-animation: none !important;
+    transition: none !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+    transform: none !important;
+    -webkit-transform: none !important;
+  }
+}

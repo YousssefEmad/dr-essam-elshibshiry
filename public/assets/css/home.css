@@ -88,8 +88,10 @@ img.wp-smiley, img.emoji {
 /*/RESPONSIVE_MEDIA*/
 
  .u-section-2-1 {
-  background-image: url("/assets/images/banners/slide-1.jpg");
+  background-image: url("/assets/images/banners/slide-1.png");
   background-position: 50% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 .u-section-2-1 .u-sheet-1 {
   min-height: 800px;
@@ -127,8 +129,10 @@ img.wp-smiley, img.emoji {
 /*/RESPONSIVE_MEDIA*/
 
  .u-section-2-2 {
-  background-image: url("/assets/images/banners/slide-2.jpg");
+  background-image: url("/assets/images/banners/slide-2.png");
   background-position: 50% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 .u-section-2-2 .u-sheet-1 {
   min-height: 800px;

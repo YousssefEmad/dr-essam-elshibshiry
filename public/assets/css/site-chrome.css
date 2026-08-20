@@ -3,6 +3,10 @@
 .u-header {
   background-image: none;
   background-color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 14px rgba(0, 0, 0, 0.08);
 }
 
 .u-header .u-sheet-1 {
