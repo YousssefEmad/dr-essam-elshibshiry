@@ -492,9 +492,9 @@ img.wp-smiley, img.emoji {
 }
 .u-section-4 .u-image-1 {
   min-height: 720px;
-  background-image: url("/assets/images/dr-essam-portrait.png");
+  background-image: none;
   background-position: 50% 18%;
-  background-size: cover;
+  background-size: contain;
 }
 .u-section-4 .u-layout-cell-5 {
   min-height: 224px;
@@ -5509,6 +5509,13 @@ a.u-link.u-text-hover-grey-90:hover {
   margin: -52px auto 20px 0 !important;
 }
 @media (max-width: 991px) {
+  .u-header .u-sheet-1 {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    min-height: 70px !important;
+    padding: 8px 16px !important;
+  }
   .u-header .u-image-1,
   .u-header .essam-header-logo,
   .u-header a.u-logo,
@@ -5517,8 +5524,9 @@ a.u-link.u-text-hover-grey-90:hover {
     height: 52px !important;
     max-width: 52px !important;
     max-height: 52px !important;
+    margin: 0 !important;
   }
   .u-header .u-menu-1 {
-    margin-top: -44px !important;
+    margin: 0 !important;
   }
 }
