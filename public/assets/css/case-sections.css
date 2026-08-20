@@ -1,0 +1,156 @@
+/* Case category sections on /gallery */
+.essam-case-section {
+  padding: 48px 0 64px;
+  background: #fff;
+}
+
+.essam-case-section + .essam-case-section {
+  border-top: 1px solid #eee;
+  background: #f5f5f5;
+}
+
+.essam-case-section__sheet {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 20px;
+  min-height: auto !important;
+}
+
+.essam-case-section__title {
+  margin: 0 auto 12px;
+  font-size: clamp(1.75rem, 3vw, 2.75rem);
+  font-weight: 800;
+  color: #151515;
+  text-align: center;
+}
+
+.essam-case-section__line {
+  width: 88px;
+  height: 5px;
+  margin: 0 auto 36px;
+  background: var(--essam-brown, #8b7355);
+  border-radius: 3px;
+}
+
+.essam-case-gallery {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 16px;
+  align-items: stretch;
+  justify-content: center;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.essam-case-gallery__main {
+  position: relative;
+  flex: 1;
+  min-width: 0;
+  background: #111;
+  border-radius: 8px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 520px;
+}
+
+.essam-case-gallery__image {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 640px;
+  object-fit: contain;
+}
+
+.essam-case-gallery__nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.9);
+  color: #151515;
+  font-size: 28px;
+  line-height: 1;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.essam-case-gallery__nav:hover {
+  background: #fff;
+}
+
+.essam-case-gallery__nav--prev {
+  right: 12px;
+}
+
+.essam-case-gallery__nav--next {
+  left: 12px;
+}
+
+.essam-case-gallery__thumbs {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 88px;
+  max-height: 640px;
+  overflow-y: auto;
+  flex-shrink: 0;
+  padding: 2px;
+}
+
+.essam-case-gallery__thumb {
+  display: block;
+  width: 100%;
+  padding: 0;
+  border: 2px solid transparent;
+  border-radius: 6px;
+  overflow: hidden;
+  cursor: pointer;
+  background: #ddd;
+  flex-shrink: 0;
+  aspect-ratio: 1;
+}
+
+.essam-case-gallery__thumb img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.essam-case-gallery__thumb--active {
+  border-color: var(--essam-brown, #8b7355);
+  box-shadow: 0 0 0 1px var(--essam-brown, #8b7355);
+}
+
+@media (max-width: 767px) {
+  .essam-case-gallery {
+    flex-direction: column;
+  }
+
+  .essam-case-gallery__main {
+    min-height: 380px;
+  }
+
+  .essam-case-gallery__thumbs {
+    flex-direction: row;
+    width: 100%;
+    max-height: none;
+    overflow-x: auto;
+    overflow-y: hidden;
+  }
+
+  .essam-case-gallery__thumb {
+    width: 72px;
+    height: 72px;
+    aspect-ratio: auto;
+  }
+}

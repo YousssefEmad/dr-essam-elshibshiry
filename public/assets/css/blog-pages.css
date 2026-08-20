@@ -1,0 +1,211 @@
+/* Blog list — 3 columns, rows grow with more posts */
+.essam-blog-grid .u-sheet-1 {
+  min-height: auto !important;
+}
+
+.essam-blog-grid .u-repeater-1 {
+  display: grid !important;
+  grid-template-columns: repeat(3, calc(33.3333% - 14.6667px)) !important;
+  grid-auto-rows: auto;
+  grid-gap: 22px;
+  min-height: auto !important;
+  height: auto !important;
+}
+
+.essam-blog-grid .u-repeater-item-extra .u-container-layout-extra,
+.essam-blog-grid .u-repeater-item-extra {
+  background-image: none;
+}
+
+.essam-blog-grid .u-text-title,
+.essam-blog-grid .u-repeater-item-extra .u-text-title {
+  margin: 20px auto 0 1px;
+  font-weight: 700;
+}
+
+.essam-blog-grid .u-metadata-extra,
+.essam-blog-grid .u-repeater-item-extra .u-metadata-extra {
+  font-size: 0.875rem;
+  margin: 20px auto 0 1px;
+}
+
+.essam-blog-grid .u-text-body,
+.essam-blog-grid .u-repeater-item-extra .u-text-body {
+  margin: 20px auto 0 1px;
+}
+
+.essam-blog-grid .u-btn-extra,
+.essam-blog-grid .u-repeater-item-extra .u-btn-extra {
+  margin: 20px auto 0 1px;
+}
+
+.essam-blog-grid .u-repeater-item-extra .u-container-layout-extra {
+  padding: 30px 29px;
+}
+
+@media (max-width: 991px) {
+  .essam-blog-grid .u-repeater-1 {
+    grid-template-columns: repeat(2, calc(50% - 11px)) !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .essam-blog-grid .u-repeater-1 {
+    grid-template-columns: 100% !important;
+  }
+}
+
+/* Blog detail — match original post page */
+.essam-blog-detail .u-blog-detail .u-sheet-1 {
+  min-height: auto !important;
+}
+
+.essam-blog-detail .u-blog-detail .u-post-details-1 {
+  min-height: auto;
+  background-image: none;
+  margin: 60px 0;
+  max-width: 1140px;
+}
+
+.essam-blog-detail .u-blog-detail .u-container-layout-1 {
+  padding: 30px;
+  text-align: right;
+}
+
+.essam-blog-detail .u-blog-detail .u-text-1 {
+  margin: 0;
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 1.3;
+  text-align: right;
+}
+
+.essam-blog-detail .u-blog-detail .u-metadata-1 {
+  margin: 20px 0 0;
+  font-size: 0.875rem;
+  color: #b3b3b3;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+}
+
+.essam-blog-detail .u-blog-detail .u-meta-sep {
+  color: #b3b3b3;
+  user-select: none;
+}
+
+.essam-blog-detail .u-blog-detail .u-text-2 {
+  margin: 20px 0 0;
+  text-align: justify;
+}
+
+.essam-blog-detail .u-blog-detail .u-text-2 p {
+  margin-bottom: 1em;
+  line-height: 1.8;
+}
+
+.essam-blog-detail .u-blog-detail .u-text-2 strong {
+  font-weight: 700;
+}
+
+.essam-blog-detail .u-blog-comments {
+  padding-bottom: 80px;
+}
+
+.essam-blog-detail .u-blog-comments .u-sheet-1 {
+  min-height: auto !important;
+  max-width: 1140px;
+}
+
+.essam-blog-detail .comments-area {
+  margin: 0 auto;
+  text-align: right;
+}
+
+.essam-blog-detail .comment-reply-title {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 0 0 24px;
+}
+
+.essam-blog-detail .essam-comment-form label {
+  display: block;
+  margin-bottom: 6px;
+}
+
+.essam-blog-detail .essam-comment-form input[type="text"],
+.essam-blog-detail .essam-comment-form input[type="email"],
+.essam-blog-detail .essam-comment-form input[type="url"],
+.essam-blog-detail .essam-comment-form textarea {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  font: inherit;
+  background: #fff;
+}
+
+.essam-blog-detail .essam-comment-form textarea {
+  min-height: 180px;
+  resize: vertical;
+}
+
+.essam-blog-detail .essam-comment-form .comment-notes {
+  font-size: 0.875rem;
+  color: #666;
+  margin-bottom: 16px;
+}
+
+.essam-blog-detail .essam-comment-form .comment-form-cookies-consent {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.essam-blog-detail .essam-comment-form .comment-form-cookies-consent input {
+  margin-top: 4px;
+  flex-shrink: 0;
+}
+
+.essam-blog-detail .essam-comment-form .comment-form-cookies-consent label {
+  margin: 0;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.essam-blog-detail .essam-comment-form .form-submit {
+  margin-top: 20px;
+  text-align: right;
+}
+
+.essam-blog-detail .essam-comment-form #submit.u-btn {
+  background-color: #478ac9;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  padding: 12px 32px;
+  font-size: 1rem;
+  display: inline-block;
+}
+
+.essam-blog-detail .essam-comment-form #submit.u-btn:hover {
+  background-color: #387cbd;
+}
+
+.essam-blog-detail .u-textlink {
+  color: inherit;
+  text-decoration: none;
+}
+
+@media (max-width: 991px) {
+  .essam-blog-detail .u-blog-detail .u-post-details-1 {
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  .essam-blog-detail .u-blog-detail .u-text-1 {
+    font-size: 1.75rem;
+  }
+}

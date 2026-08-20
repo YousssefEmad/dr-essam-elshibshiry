@@ -1,0 +1,152 @@
+/* Next overrides — theme CSS lives in /assets/theme/zero/ */
+body {
+  margin: 0;
+}
+
+.recentcomments a {
+  display: inline !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+/* Nav: only explicit active link gets border (Nicepage theme adds borders to all u-border-2 links) */
+.u-header .u-nav-link.u-border-2:not(.active) {
+  border-color: transparent !important;
+}
+
+.u-header .u-nav-link.u-border-2.active {
+  border-color: var(--grey-90, #151515) !important;
+}
+
+.u-header .u-popupmenu-items .u-nav-link:not(.active) {
+  border: none !important;
+}
+
+.u-section-2 .u-blog-1 .u-btn {
+  display: inline-block;
+  text-decoration: none;
+}
+
+.u-section-2 .u-blog-1 .u-post-header-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.u-section-2 .u-blog-1 .u-post-header-link:hover {
+  text-decoration: underline;
+}
+.essam-floating-social {
+  position: fixed;
+  right: 24px;
+  bottom: 24px;
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 12px;
+  pointer-events: none;
+}
+
+.essam-floating-social__stack,
+.essam-floating-social__main,
+.essam-floating-social__toggle {
+  pointer-events: auto;
+}
+
+.essam-floating-social__stack {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(8px);
+  transition: opacity 0.2s ease, transform 0.2s ease, visibility 0.2s;
+}
+
+.essam-floating-social.is-open .essam-floating-social__stack {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.essam-floating-social__link,
+.essam-floating-social__toggle {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.18);
+  font-size: 22px;
+  line-height: 1;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.essam-floating-social__link:hover,
+.essam-floating-social__toggle:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.22);
+}
+
+.essam-floating-social__link--filled {
+  background: #26a9e0;
+  color: #fff;
+}
+
+.essam-floating-social__link--outline {
+  background: #fff;
+  color: #26a9e0;
+}
+
+.essam-floating-social__main {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.essam-floating-social__label {
+  background: #2d3436;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 600;
+  padding: 10px 14px;
+  border-radius: 6px;
+  white-space: nowrap;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.18);
+}
+
+.essam-floating-social__toggle {
+  background: #26a9e0;
+  color: #fff;
+}
+
+.essam-floating-social__link svg,
+.essam-floating-social__toggle svg {
+  width: 24px;
+  height: 24px;
+  display: block;
+}
+
+@media (max-width: 575px) {
+  .essam-floating-social {
+    right: 16px;
+    bottom: 16px;
+  }
+
+  .essam-floating-social__link,
+  .essam-floating-social__toggle {
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+  }
+
+  .essam-floating-social__label {
+    font-size: 13px;
+    padding: 8px 12px;
+  }
+}

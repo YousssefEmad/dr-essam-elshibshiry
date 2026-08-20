@@ -1,0 +1,4 @@
+node_modules/
+.next/
+_scrape-*.html
+.env*.local

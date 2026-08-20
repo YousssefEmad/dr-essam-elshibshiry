@@ -1,0 +1,266 @@
+/* Shared header + footer — keep logo small and aligned with nav */
+
+.u-header {
+  background-image: none;
+  background-color: #fff;
+}
+
+.u-header .u-sheet-1 {
+  min-height: 88px !important;
+  position: relative;
+}
+
+.u-header .u-image-1,
+.u-header a.essam-header-logo,
+.u-header a.u-logo {
+  width: 64px !important;
+  height: 64px !important;
+  max-width: 64px !important;
+  max-height: 64px !important;
+  margin: 12px 0 12px auto !important;
+  overflow: hidden;
+}
+
+.u-header .u-logo-image-1 {
+  width: 64px !important;
+  height: 64px !important;
+  max-width: 64px !important;
+  max-height: 64px !important;
+  object-fit: contain !important;
+  display: block !important;
+}
+
+.u-header .u-menu-1 {
+  margin: -52px auto 20px 0 !important;
+  width: auto !important;
+}
+
+.u-header .u-nav-1 {
+  font-size: 0.95rem;
+  letter-spacing: 0;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.u-header .u-nav-1 .u-nav-link {
+  padding: 8px 16px !important;
+  line-height: 1.25 !important;
+}
+
+.u-header .u-nav-2 {
+  font-size: 1rem;
+  letter-spacing: 0;
+}
+
+@media (max-width: 1199px) {
+  .u-header .u-sheet-1 {
+    min-height: 80px !important;
+  }
+
+  .u-header .u-image-1,
+  .u-header a.essam-header-logo,
+  .u-header a.u-logo {
+    width: 56px !important;
+    height: 56px !important;
+    max-width: 56px !important;
+    max-height: 56px !important;
+    margin-top: 12px !important;
+  }
+
+  .u-header .u-logo-image-1 {
+    width: 56px !important;
+    height: 56px !important;
+    max-width: 56px !important;
+    max-height: 56px !important;
+  }
+
+  .u-header .u-menu-1 {
+    margin-top: -48px !important;
+  }
+}
+
+@media (max-width: 991px) {
+  .u-header .u-image-1,
+  .u-header a.essam-header-logo,
+  .u-header a.u-logo {
+    width: 52px !important;
+    height: 52px !important;
+    max-width: 52px !important;
+    max-height: 52px !important;
+  }
+
+  .u-header .u-logo-image-1 {
+    width: 52px !important;
+    height: 52px !important;
+  }
+
+  .u-header .u-menu-1 {
+    margin-top: -44px !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .u-header .u-sheet-1 {
+    min-height: 70px !important;
+  }
+
+  .u-header .u-image-1,
+  .u-header a.essam-header-logo,
+  .u-header a.u-logo {
+    width: 48px !important;
+    height: 48px !important;
+    max-width: 48px !important;
+    max-height: 48px !important;
+    margin-top: 11px !important;
+  }
+
+  .u-header .u-logo-image-1 {
+    width: 48px !important;
+    height: 48px !important;
+  }
+
+  .u-header .u-menu-1 {
+    margin-top: -40px !important;
+    margin-right: 20px !important;
+  }
+}
+
+@media (max-width: 575px) {
+  .u-header .u-sheet-1 {
+    min-height: 64px !important;
+  }
+
+  .u-header .u-image-1,
+  .u-header a.essam-header-logo,
+  .u-header a.u-logo {
+    width: 44px !important;
+    height: 44px !important;
+    max-width: 44px !important;
+    max-height: 44px !important;
+  }
+
+  .u-header .u-logo-image-1 {
+    width: 44px !important;
+    height: 44px !important;
+  }
+
+  .u-header .u-menu-1 {
+    margin-top: -36px !important;
+  }
+}
+
+.u-footer .u-sheet-1 {
+  min-height: auto !important;
+  padding: 28px 20px 24px !important;
+  display: flex !important;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+}
+
+.u-footer .u-social-icons-1 {
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  gap: 12px;
+  height: auto !important;
+  min-height: 0 !important;
+  width: auto !important;
+  min-width: 0 !important;
+  margin: 0 auto !important;
+  white-space: nowrap;
+  float: none !important;
+}
+
+.u-footer .u-social-icons-1 .u-social-url {
+  display: inline-flex !important;
+  align-items: center;
+  justify-content: center;
+  margin: 0 !important;
+}
+
+.u-footer .u-social-icons-1 .u-icon {
+  width: 32px !important;
+  height: 32px !important;
+}
+
+.u-footer .u-icon-1 {
+  color: rgb(59, 89, 152) !important;
+}
+
+.u-footer .u-icon-2 {
+  color: rgb(197, 54, 164) !important;
+}
+
+.u-footer .u-icon-3 {
+  height: 100%;
+  color: rgb(0, 230, 118) !important;
+}
+
+.u-footer .u-icon-4 {
+  height: 100%;
+  color: rgb(210, 34, 21) !important;
+}
+
+.essam-footer-copyright {
+  margin: 0;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.78);
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+.essam-footer-copyright strong,
+.essam-footer-copyright b {
+  color: #c4a574;
+  font-weight: 700;
+}
+
+/* Branch phone numbers: keep LTR so +country code is not reversed */
+.essam-phone-list {
+  display: flex !important;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  direction: ltr !important;
+  unicode-bidi: isolate;
+  text-align: center !important;
+}
+
+.essam-phone-link {
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.2s ease, opacity 0.2s ease;
+}
+
+.essam-phone-link:hover {
+  color: #8bb5be;
+  opacity: 0.95;
+}
+
+@media (max-width: 1199px) {
+  .u-footer .u-sheet-1 {
+    min-height: auto !important;
+  }
+}
+
+@media (max-width: 991px) {
+  .u-footer .u-sheet-1 {
+    min-height: auto !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .u-footer .u-sheet-1 {
+    min-height: auto !important;
+  }
+}
+
+@media (max-width: 575px) {
+  .u-footer .u-sheet-1 {
+    min-height: auto !important;
+  }
+}

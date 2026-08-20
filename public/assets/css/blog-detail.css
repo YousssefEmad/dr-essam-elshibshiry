@@ -1,0 +1,73 @@
+.u-section-1.u-blog-detail .u-sheet-1,
+.u-section-1.u-blog-comments .u-sheet-1 {
+  min-height: auto;
+}
+
+.u-section-1.u-blog-detail .u-post-details-1 {
+  min-height: 375px;
+  background-image: none;
+  margin: 60px auto 60px 0;
+}
+
+.u-section-1.u-blog-detail .u-container-layout-1 {
+  padding: 30px;
+}
+
+.u-section-1.u-blog-detail .u-text-1 {
+  margin: 0;
+  font-weight: 700;
+}
+
+.u-section-1.u-blog-detail .u-metadata-1 {
+  margin: 20px 0 0;
+  font-size: 0.875rem;
+}
+
+.u-section-1.u-blog-detail .u-text-2 {
+  margin: 20px 0 0;
+}
+
+.u-section-1.u-blog-detail .u-text-2 p {
+  margin-bottom: 1em;
+}
+
+.u-section-1.u-blog-comments {
+  padding-bottom: 60px;
+}
+
+.u-section-1.u-blog-comments .comments-area {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: right;
+}
+
+.essam-comment-form label {
+  display: block;
+  margin-bottom: 6px;
+}
+
+.essam-comment-form input,
+.essam-comment-form textarea {
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  font: inherit;
+}
+
+.essam-comment-form .comment-notes {
+  font-size: 0.875rem;
+  color: #666;
+}
+
+.essam-comment-form .form-submit {
+  margin-top: 16px;
+}
+
+@media (max-width: 991px) {
+  .u-section-1.u-blog-detail .u-post-details-1 {
+    margin-right: initial;
+    margin-left: initial;
+  }
+}
